@@ -19,16 +19,18 @@ body {
 .container {
     padding: 10px 10%;
 }
+
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 80px;          /* 🔥 FIXED HEIGHT */
+    height: 80px;
+    /* 🔥 FIXED HEIGHT */
 }
 
 .logo {
     width: 140px;
-    height:190px;
+    height: 190px;
 }
 
 nav ul li {
@@ -57,6 +59,7 @@ nav ul li a::after {
 nav ul li a:hover::after {
     width: 100%;
 }
+
 /* ===== HEADER RIGHT IMAGE ===== */
 
 .header-content {
@@ -70,19 +73,52 @@ nav ul li a:hover::after {
 }
 
 .header-image {
-    flex: 1.2;              /* 🔥 makes image section wider */
+    flex: 1.2;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
 .header-image img {
-    width: 200%;           
-    max-width: 520px;      
-    height: auto;
-    object-fit: contain;
-    transform: scale(1.05);
-    border-radius: 20px;
+    width: 580px;
+
+    height: 540px;
+
+    object-fit: cover;
+
+    border-radius: 50% 50% 30% 30% / 40% 40% 20% 20%;
+
+    border: 5px solid rgba(255, 0, 79, 0.3);
+    box-shadow: 0 0 50px rgba(255, 0, 79, 0.4);
+    transition: all 0.5s ease;
+    filter: grayscale(20%);
+    background: linear-gradient(145deg, #1a1a1a, #080808);
+    backdrop-filter: blur(10px);
+}
+
+.header-image::before {
+    content: '';
+    position: absolute;
+    width: 320px;
+    height: 420px;
+    border: 2px solid #ff004f;
+    border-radius: 50% 50% 30% 30% / 40% 40% 20% 20%;
+    z-index: -1;
+    transition: 0.5s;
+    opacity: 0.5;
+}
+
+.header-image:hover img {
+    transform: translateY(-10px) rotate(-2deg);
+    filter: grayscale(0%);
+    box-shadow: 0 10px 60px rgba(255, 0, 79, 0.6);
+    border-color: rgba(255, 0, 79, 1);
+}
+
+.header-image:hover::before {
+    transform: translate(15px, 15px);
+    opacity: 0.8;
 }
 
 
@@ -230,6 +266,7 @@ nav ul li a:hover::after {
 .service-card:hover p {
     color: #fff;
 }
+
 .service-card a {
     display: inline-block;
     margin-top: 20px;
@@ -274,7 +311,7 @@ nav ul li a:hover::after {
 .layer {
     width: 100%;
     height: 0;
-    background: linear-gradient(rgba(0,0,0,0.6), #ff004f);
+    background: linear-gradient(rgba(0, 0, 0, 0.6), #ff004f);
     position: absolute;
     left: 0;
     bottom: 0;
@@ -296,6 +333,7 @@ nav ul li a:hover::after {
 .work:hover .layer {
     height: 100%;
 }
+
 .see-more {
     text-align: center;
     margin-top: 40px;
@@ -321,6 +359,8 @@ nav ul li a:hover::after {
 #contact {
     padding: 80px 0;
 }
+
+
 
 .contact-row {
     display: flex;
@@ -361,6 +401,7 @@ nav ul li a:hover::after {
     border-radius: 6px;
     margin-top: 10px;
 }
+
 .socialmedia-icons {
     margin-top: 20px;
     display: flex;
@@ -385,6 +426,7 @@ nav ul li a:hover::after {
     background: #ff004f;
     transform: translateY(-5px);
 }
+
 .cv-btn {
     display: inline-flex;
     align-items: center;
@@ -407,6 +449,41 @@ nav ul li a:hover::after {
 .cv-btn:hover {
     transform: translateY(-4px);
     box-shadow: 0 8px 20px rgba(255, 0, 79, 0.4);
+}
+
+#msg {
+    color: #61b752;
+    margin-top: 15px;
+    /* 🔥 Proper spacing below the button */
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 10px 15px;
+    border-radius: 6px;
+    background: rgba(97, 183, 82, 0.1);
+    /* Subtle green background */
+    border-left: 4px solid #61b752;
+    /* Noticeable accent border */
+    animation: fadeIn 0.4s ease-out;
+    /* Smooth entry */
+    width: fit-content;
+}
+
+#msg:empty {
+    display: none;
+    /* Hide completely when no message */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 /* ================= RESPONSIVE ================= */

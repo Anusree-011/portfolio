@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,244 +12,253 @@
 
 <body>
 
-<!-- HEADER -->
-<div id="header">
-    <div class="container">
-        <nav>
-            <img src="images/logo1.png" class="logo">
-            <ul>
-                <li><a href="#header">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services"></a>Expertise</li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+    <!-- HEADER -->
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo1.png" class="logo">
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Expertise</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
 
-        <div class="header-content">
-            <div class="header-text">
-                <p>Full Stack Developer</p>
-                <h1>Hi, I am <span>Anusree M</span><br>From India</h1>
-            </div>
-        
-            <div class="header-image">
-                <img src="images/anusreem1.jpg" alt="Anusree M">
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- ABOUT -->
-<div id="about">
-    <div class="container">
-        <div class="row">
-            <div class="about-col-1">
-                <img src="images/new one.jpeg">
-            </div>
-            <div class="about-col-2">
-                <h1 class="sub-title">About Me</h1>
-                <p>
-                    I am a passionate Full Stack Developer with hands-on experience in building responsive and user-friendly web applications. I work primarily with React and the MERN stack, and I enjoy turning ideas into clean, functional interfaces. I am always eager to learn new technologies and improve my skills while building real-world projects.
-                </p>
-
-                <div class="tab-titles">
-                    <p class="tab-links" onclick="toggleTab('skills', this)">Skills</p>
-                    <p class="tab-links" onclick="toggleTab('experience', this)">Experience</p>
-                    <p class="tab-links" onclick="toggleTab('education', this)">Education</p>
+            <div class="header-content">
+                <div class="header-text">
+                    <p>Full Stack Developer</p>
+                    <h1>Hi, I am <span>Anusree M</span><br>From India</h1>
                 </div>
 
-                <div class="tab-contents" id="skills">
-                    <ul>
-                        <li><span>Frontend</span><br>HTML, CSS, JavaScript, React</li>
-                        <li><span>Full Stack</span><br>MERN Stack</li>
-                        <li><span>React Native</span><br>Android and IOS</li>
-                        <li><span>UI Design</span><br>Responsive & Modern UI</li>
-                        <li><span>APIs</span><br>REST API Integration</li>
-                        <li><span>Tools</span><br>Git, GitHub, Postman</li>
-                      </ul>
-                </div>
-
-                <div class="tab-contents" id="experience">
-                    <ul>
-                        <li><span>Intern</span><br>Software Developer Intern at <span>CoreCognitics</span></li>
-                    </ul>
-                </div>
-
-                <div class="tab-contents" id="education">
-                    <ul>
-                        <li><span>BTech</span><br>Electrical and Electronics Engineering</li>
-                        <li><span>PlusTwo</span><br>Biology science</li>
-                        <li><span>SSLC</span><br> State</li>
-
-                    </ul>
+                <div class="header-image">
+                    <img src="images/anusreem1.jpg" alt="Anusree M">
                 </div>
             </div>
         </div>
     </div>
-</div>
 
-<!-- SERVICES (UNCHANGED) -->
-<div id="services">
-    <div class="container">
-        <h1 class="sub-title">My Expertise</h1>
-        <div class="services-list">
+    <!-- ABOUT -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/new one.jpeg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>
+                        I am a passionate Full Stack Developer with hands-on experience in building responsive and
+                        user-friendly web applications. I work primarily with React and the MERN stack, and I enjoy
+                        turning ideas into clean, functional interfaces. I am always eager to learn new technologies and
+                        improve my skills while building real-world projects.
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="toggleTab('skills', this)">Skills</p>
+                        <p class="tab-links" onclick="toggleTab('experience', this)">Experience</p>
+                        <p class="tab-links" onclick="toggleTab('education', this)">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Frontend</span><br>HTML, CSS, JavaScript, React</li>
+                            <li><span>Full Stack</span><br>MERN Stack</li>
+                            <li><span>React Native</span><br>Android and IOS</li>
+                            <li><span>UI Design</span><br>Responsive & Modern UI</li>
+                            <li><span>APIs</span><br>REST API Integration</li>
+                            <li><span>Tools</span><br>Git, GitHub, Postman</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Intern</span><br>Software Developer Intern at <span>CoreCognitics</span></li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>BTech</span><br>Electrical and Electronics Engineering</li>
+                            <li><span>PlusTwo</span><br>Biology science</li>
+                            <li><span>SSLC</span><br> State</li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SERVICES (UNCHANGED) -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Expertise</h1>
             <div class="services-list">
-                <div class="service-card">
-                    <h2>Web Design</h2>
-                    <p>
-                        Designing clean, modern and responsive websites using HTML,
-                        CSS, and JavaScript.
-                    </p>
-                    <a href="#">Learn more</a>
-                </div>
-            
-                <div class="service-card">
-                    <h2>Frontend Development</h2>
-                    <p>
-                        Building interactive UIs using React, hooks, routing and
-                        modern frontend tools.
-                    </p>
-                    <a href="#">Learn more</a>
-                </div>
-                <div class="service-card">
-                    <h2>MERN Stack Development</h2>
-                    <p>
-                        Full stack web applications using MongoDB, Express, React
-                        and Node.js.
-                    </p>
-                    <a href="#">Learn more</a>
-                </div>
-                <div class="service-card">
-                    <h2>React Native Development</h2>
-                    <p>
-                        Building cross-platform mobile applications for Android and iOS
-                        using React Native with smooth performance.
-                    </p>
-                    <a href="#">Learn more</a>
-                </div>
-                <div class="service-card">
-                    <h2>API Integration</h2>
-                    <p>
-                        Integrating REST APIs, authentication, and handling
-                        backend data efficiently.
-                    </p>
-                    <a href="#">Learn more</a>
-                </div>
-            
-        </div>
-    </div>
-</div>
+                <div class="services-list">
 
-<!-- ✅ PORTFOLIO (NEW) -->
-<div id="portfolio">
-    <div class="container">
-        <h1 class="sub-title">My Works</h1>
 
-        <div class="work-list">
-            <div class="work">
-                <img src="images/movie booking.webp">
-                <div class="layer">
-                    <h3>Movie Booking App (MERN)</h3>
-                    <p>
-                        Full stack movie booking system with show listings,
-                        seat selection and booking management.
-                    </p>
+                    <div class="service-card">
+                        <h2>Frontend Development</h2>
+                        <p>
+                            Building interactive UIs using React, hooks, routing and
+                            modern frontend tools.
+                        </p>
+                        <a href="#">Learn more</a>
+                    </div>
+                    <div class="service-card">
+                        <h2>MERN Stack Development</h2>
+                        <p>
+                            Full stack web applications using MongoDB, Express, React
+                            and Node.js.
+                        </p>
+                        <a href="#">Learn more</a>
+                    </div>
+                    <div class="service-card">
+                        <h2>React Native Development</h2>
+                        <p>
+                            Building cross-platform mobile applications for Android and iOS
+                            using React Native with smooth performance.
+                        </p>
+                        <a href="#">Learn more</a>
+                    </div>
+
                 </div>
-            </div>
-
-            <div class="work">
-                <img src="images/ChatApp.jpg">
-                <div class="layer">
-                    <h3>Chat Application (MERN)</h3>
-        <p>
-            Real-time chat application built using MongoDB, Express,
-            React and Node.js with authentication and live messaging.
-        </p>
-                </div>
-            </div>
-
-            <div class="work">
-                <img src="images/skyapp.jpg">
-                <div class="layer">
-                    <h3>Sky App (Weather)</h3>
-                    <p>
-                        Location-based weather app that detects user location
-                        and displays humidity and sky conditions.
-                    </p>
-                   
             </div>
         </div>
-       
-    </div>
-    <div class="see-more">
-        <a href="#" class="btn">See More</a>
-    </div>
-</div>
 
-<!-- ✅ CONTACT (NEW) -->
-<div id="contact">
-    <div class="container">
-        <h1 class="sub-title">Contact Me</h1>
+        <!-- ✅ PORTFOLIO (NEW) -->
+        <div id="portfolio">
+            <div class="container">
+                <h1 class="sub-title">My Works</h1>
 
-        <div class="contact-row">
-            <div class="contact-left">
-                <p>Email: anusree450m@gmail.com</p>
-                <p>Phone: +91 8281421011</p>
-                <div class="socialmedia-icons">
-                    <a href="#" target="_blank">
-                        <i class="fab fa-facebook-f"></i>
-                    </a>
-                    <a href="#"  target="_blank">
-                        <i class="fab fa-linkedin-in"></i>
-                    </a>
-                    <a href="#" target="_blank">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                    <a href="#" target="_blank">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    
+                <div class="work-list">
+                    <div class="work">
+                        <img src="images/movie booking.webp">
+                        <div class="layer">
+                            <h3>Movie Booking App (MERN)</h3>
+                            <p>
+                                Full stack movie booking system with show listings,
+                                seat selection and booking management.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="work">
+                        <img src="images/ChatApp.jpg">
+                        <div class="layer">
+                            <h3>Chat Application (MERN)</h3>
+                            <p>
+                                Real-time chat application built using MongoDB, Express,
+                                React and Node.js with authentication and live messaging.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="work">
+                        <img src="images/skyapp.jpg">
+                        <div class="layer">
+                            <h3>Sky App (Weather)</h3>
+                            <p>
+                                Location-based weather app that detects user location
+                                and displays humidity and sky conditions.
+                            </p>
+
+                        </div>
+                    </div>
+
                 </div>
-                
-                    <a href="images/Anusree_M_CV.pdf" download class="cv-btn">
-                        <i class="fa-solid fa-download"></i> Download CV
-                    </a>
-            
-              
+                <div class="see-more">
+                    <a href="https://github.com/" target="_blank" class="btn">See More</a>
+                </div>
             </div>
-            
-          
 
-            <div class="contact-right">
-                <form>
-                    <input type="text" placeholder="Your Name" required>
-                    <input type="email" placeholder="Your Email" required>
-                    <textarea rows="6" placeholder="Your Message"></textarea>
-                    <button class="btn">Send</button>
-                </form>
+            <!-- ✅ CONTACT (NEW) -->
+            <div id="contact">
+                <div class="container">
+                    <h1 class="sub-title">Contact Me</h1>
+
+                    <div class="contact-row">
+                        <div class="contact-left">
+                            <p>Email: anusree450m@gmail.com</p>
+                            <p>Phone: +91 8281421011</p>
+                            <div class="socialmedia-icons">
+                                <a href="#" target="_blank">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a href="https://www.linkedin.com/in/anusree-melath-66b89a287/" target="_blank">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                                <a href="#" target="_blank">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="https://github.com/" target="_blank">
+                                    <i class="fab fa-github"></i>
+                                </a>
+
+                            </div>
+
+                            <a href="https://drive.google.com/file/d/1Vfl8cZjzwMcGUhMOO640iRru2wfDQie3/view?usp=drive_link"
+                                download class="cv-btn">
+                                <i class="fa-solid fa-download"></i> Download CV
+                            </a>
+
+
+                        </div>
+
+
+
+                        <div class="contact-right">
+                            <form name="submit-to-google-sheet">
+                                <input type="text" name="Name" placeholder="Your Name" required>
+                                <input type="email" name="Email" placeholder="Your Email" required>
+                                <textarea rows="6" name="Message" placeholder="Your Message"></textarea>
+                                <button class="btn">Submit</button>
+                            </form>
+                            <span id="msg"></span>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
-</div>
 
 
 
-<!-- SCRIPT -->
-<script>
-    function toggleTab(tabId, element) {
-        const tab = document.getElementById(tabId);
-        const isOpen = tab.classList.contains("active-tab");
+            <!-- SCRIPT -->
+            <script>
+                function toggleTab(tabId, element) {
+                    const tab = document.getElementById(tabId);
+                    const isOpen = tab.classList.contains("active-tab");
 
-        document.querySelectorAll(".tab-contents")
-            .forEach(t => t.classList.remove("active-tab"));
-        document.querySelectorAll(".tab-links")
-            .forEach(l => l.classList.remove("active-link"));
+                    document.querySelectorAll(".tab-contents")
+                        .forEach(t => t.classList.remove("active-tab"));
+                    document.querySelectorAll(".tab-links")
+                        .forEach(l => l.classList.remove("active-link"));
 
-        if (!isOpen) {
-            tab.classList.add("active-tab");
-            element.classList.add("active-link");
-        }
-    }
-</script>
+                    if (!isOpen) {
+                        tab.classList.add("active-tab");
+                        element.classList.add("active-link");
+                    }
+                }
+            </script>
+            <script>
+                const scriptURL = 'https://script.google.com/macros/s/AKfycbzcDWrZiWsIYw9fYcbM04Ll2S6-5n0hJaU2hfMjx4ZoP6JUwhC2Oy9ivkf6HP0S_wUDAQ/exec'
+                const form = document.forms['submit-to-google-sheet']
+                const msg = document.getElementById("msg")
+
+                form.addEventListener('submit', e => {
+                    e.preventDefault()
+                    fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                        .then(response => {
+                            msg.innerHTML = "Message sent successfully!"
+                            setTimeout(function () {
+                                msg.innerHTML = ""
+                            }, 5000)
+                            form.reset()
+                        })
+                        .catch(error => console.error('Error!', error.message))
+                })
+            </script>
 </body>
+
 </html>
