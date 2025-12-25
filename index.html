@@ -232,5 +232,23 @@
 </div>
 
 
+
+<!-- SCRIPT -->
+<script>
+    function toggleTab(tabId, element) {
+        const tab = document.getElementById(tabId);
+        const isOpen = tab.classList.contains("active-tab");
+
+        document.querySelectorAll(".tab-contents")
+            .forEach(t => t.classList.remove("active-tab"));
+        document.querySelectorAll(".tab-links")
+            .forEach(l => l.classList.remove("active-link"));
+
+        if (!isOpen) {
+            tab.classList.add("active-tab");
+            element.classList.add("active-link");
+        }
+    }
+</script>
 </body>
 </html>
